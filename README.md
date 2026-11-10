@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./cards/hero.svg" width="100%" alt="Vedish Kukshal. Builder, 19. Co-founder of Snowball and AceCard. Student at Masters Union.">
+  <img src="./cards/hero.svg" width="100%" alt="Vedish Kukshal. Builder, 19. Co-founder of Snowball. Ex co-founder of AceCard. Student at Masters Union.">
 </p>
 
 <p align="center">
@@ -8,8 +8,8 @@
 
 <p align="center">
   <a href="https://snowballgtm.com"><img src="./cards/snowball.svg" width="32.5%" alt="Snowball. AI-native LinkedIn growth for investors and founders. Since 2024."></a>
-  <img src="./cards/acecard.svg" width="32.5%" alt="AceCard. A digital business card that turns what you say after a meeting into a CRM record. Since 2025.">
-  <img src="./cards/masters-union.svg" width="32.5%" alt="Masters Union. Studying here while I build both companies.">
+  <img src="./cards/acecard.svg" width="32.5%" alt="AceCard. A digital business card that turns what you say after a meeting into a CRM record. Ex co-founder.">
+  <img src="./cards/masters-union.svg" width="32.5%" alt="Masters Union. Studying here while I build Snowball.">
 </p>
 
 <p align="center">

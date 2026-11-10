@@ -96,7 +96,7 @@ def anim(cls_style):
 # ---------------------------------------------------------------- hero
 def hero():
     W, H = 880, 300
-    o = [svg_open(W, H, "Vedish Kukshal", "Builder, 19. Co-founder of Snowball and AceCard. Student at Masters Union.")]
+    o = [svg_open(W, H, "Vedish Kukshal", "Builder, 19. Co-founder of Snowball. Ex co-founder of AceCard. Student at Masters Union.")]
     shine_anim = "" if STATIC else (
         '<animateTransform attributeName="gradientTransform" type="translate" values="-330 0;330 0;330 0" '
         'keyTimes="0;0.22;1" dur="7s" begin="1.6s" repeatCount="indefinite"/>')
@@ -112,7 +112,7 @@ def hero():
 
     o.append('<g class="fb" style="%s"><text x="46" y="118" font-family="%s" font-size="92" fill="%s">Vedish</text></g>' % (rise(.1), SERIF, INK))
     o.append('<g class="fb" style="%s"><text x="46" y="200" font-family="%s" font-size="92" fill="url(#shine)">Kukshal</text></g>' % (rise(.25), SERIF))
-    o.append('<g class="fb" style="%s"><text x="50" y="238" font-family="%s" font-size="18" fill="%s">Builder, 19. Co-founder of Snowball and AceCard.</text></g>' % (rise(.5), SANS, INK))
+    o.append('<g class="fb" style="%s"><text x="50" y="238" font-family="%s" font-size="18" fill="%s">Builder, 19. Co-founder of Snowball. Ex co-founder of AceCard.</text></g>' % (rise(.5), SANS, INK))
     o.append('<g class="fb" style="%s"><text x="50" y="262" font-family="%s" font-size="15" fill="%s">Student at Masters Union.</text></g>' % (rise(.65), SANS, MUTE))
     o.append('<g class="fb" style="%s"><text x="50" y="284" font-family="%s" font-size="14" fill="%s">linkedin.com/in/vedish</text></g>' % (rise(.8), SANS, BLUE))
 
@@ -352,10 +352,10 @@ def build():
             "Snowball", ["AI-native LinkedIn growth for", "investors and founders."], "Since 2024",
             BLUE, "#FFFFFF", "#DBE7FF", 1.0),
         "cards/acecard.svg": tile(
-            "AceCard", ["A digital business card that", "turns what you say after a", "meeting into a CRM record."], "Since 2025",
+            "AceCard", ["A digital business card that", "turns what you say after a", "meeting into a CRM record."], "Ex co-founder",
             ICE, INK, MUTE, 1.15, link=False),
         "cards/masters-union.svg": tile(
-            "Masters Union", ["Studying here while I build", "both companies."], "Currently enrolled",
+            "Masters Union", ["Studying here while I", "build Snowball."], "Currently enrolled",
             INK, "#FFFFFF", "#93C5FD", 1.3, link=False),
     }
     cards["cards/starter-pack.svg"] = starter()
