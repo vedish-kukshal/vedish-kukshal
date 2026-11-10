@@ -1,0 +1,28 @@
+# Refreshes the contribution graph card every morning from the public contribution calendar (no token needed beyond the default one).
+# Goes in the profile repo at .github/workflows/refresh-cards.yml. The graph is ON (Vedish, 10 Nov).
+name: Refresh cards
+on:
+  schedule:
+    - cron: "30 1 * * *"   # 07:00 IST
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch contribution data
+        run: python scripts/build_cards.py fetch
+      - name: Draw cards
+        run: python scripts/build_cards.py build
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "refresh cards"
+          git push
